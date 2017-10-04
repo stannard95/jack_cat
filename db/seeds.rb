@@ -11,7 +11,9 @@ h2 = Home.create!(address: "toorr street", size_of_cat_flap: 10)
 c1 = Cat.create!(name: "Kieran", breed: "ginger", size: 10)
 c2 = Cat.create!(name: "Toffe", breed: "Jam", size: 20)
 c3 = Cat.create!(name: "Leaf", breed: "tree", size: 30)
+c4 = Cat.create!(name: "f", breed: "tree", size: 30)
 
 CatHome.create!(cat_id: c1.id, home_id: h1.id)
+CatHome.create!(cat_id: c3.id, home_id: h2.id)
 
 puts "Finished Seed..."
